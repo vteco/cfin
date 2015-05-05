@@ -1,0 +1,381 @@
+@import"reset.css";@import"superfish.css";@import"grid.css";@import"forms.css";@import"prettyPhoto.css";@import"skin.css";@import"tms.css";
+body{background:url(../images/texture.gif) 50% 0 repeat #fff;font:13px/18px Arial, Helvetica, sans-serif;color:#4d4b4b;position:relative;min-width:960px; text-align: justify;}
+html,body{height:100%;}
+/* Global Structure---------------------------------------- */
+.main{margin:0 auto;width:950px;}
+/*----- txt,links,lines,titles -----*/
+a{color:#686868;outline:none;cursor:pointer;text-decoration:none;}
+a:focus{border:none;outline:none;}
+a:hover{text-decoration:none;}
+.clear{clear:both;line-height:0;font-size:0;overflow:hidden;height:0;width:100%;}
+.wrapper{width:100%;overflow:hidden;}
+.extra-wrap{overflow:hidden;display:block;}
+p{margin-bottom:18px}
+
+h2 a:hover { text-decoration: underline; }
+h3 a:hover { text-decoration: underline; }
+
+.p0{margin-bottom:0 !important}
+.p1{margin-bottom:8px !important}
+.p2{margin-bottom:15px !important}
+.p3{margin-bottom:30px !important}
+.p4{margin-bottom:40px !important}
+.p5{margin-bottom:50px}
+.p6{margin-bottom:60px !important;}
+.p7{margin-bottom:70px}
+.reg{text-transform:uppercase}
+.rel{position:relative;}
+.fleft{float:left}
+.fright{float:right}
+.alignright{text-align:right}
+.aligncenter{text-align:center}
+.alignmiddle *{vertical-align:middle}
+.it{font-style:italic}
+.letter{letter-spacing:-1px}
+.color-1{color:#fff}
+.color-2{color:#000}
+.color-3{color:#232323}
+.clearedBox {overflow: hidden;}
+/*********************************boxes**********************************/
+.margin-bot{margin-bottom:35px !important}
+.spacing{margin-right:30px;}
+.spacing2{margin-right:6px}
+.spacing3{margin-right:60px}
+.indent-bot{margin-bottom:20px !important}
+.indent-bot2{margin-bottom:30px}
+.indent-bot3{margin-bottom:45px}
+.img-indent-bot{margin-bottom:25px !important}
+.img-indent{float:left;margin:0 20px 0px 0}
+.img-indent2{float:left;margin:0 15px 0px 0}
+.img-indent3{float:left;margin:0 12px 0px -6px}
+.img-indent-r{float:right;margin:0 20px 0px 20px}
+.prev-indent-bot{margin-bottom:10px !important}
+.prev-indent{float:left;margin:0 17px 0px 0}
+.padding-top{padding-top:10px}
+.padding-top1{padding-top:30px}
+.padding-top2{padding-top:25px}
+/*********************************header*************************************/
+header{border-top:4px solid #232323;border-bottom:1px solid #e3e3e3}
+.topHeader {margin:20px 0;}
+.topHeader .logo{float:left;background:url(../images/cartefin/logo.png) 0 0 no-repeat;width:400px;height:40px;text-indent:-5000px;overflow:hidden;}
+.topHeader .logo-en {background-image: url(../images/cartefin/logo-en.png);}
+
+.topHeader .rappelle {float: right; height: 40px; line-height: 40px; font-weight:bold; font-size: 20px; color:#002C53;}
+.topHeader .rappelle img {vertical-align: middle; height: 35px;}
+
+header nav{position:relative;z-index:99;float:left;margin:0 11px 5px 0;}
+
+/*================================>> hovers <<========================================*/
+.carousel li a img, a.border, .sf-menu li, .sf-menu li a, .button, .button1{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+.carousel ul li { text-align: center; height: 46px !important;}
+.carousel li a img{ max-height: 46px;}
+
+
+/*  Header styles */
+h1,h2,h3,h4,h5,h6{margin:0 0 15px;line-height:1.2em;color:#002C53;}
+h1{font-size:28px; margin-top: 0; margin-bottom: 0;}
+h2{font-size:18px;}
+h3{font-size:15px; color:#444444;} 
+h4{font-size:14px;}   
+h5{font-size:14px;}
+h6{font-size:12px;color:#4d4b4b;margin:0 0 7px;}
+h1 strong{color:#ffcc00;font-size:20px;letter-spacing:-1px;}
+.padding-right{padding-right:20px}
+
+.relative{position:relative;z-index:4}
+figcaption{position:absolute;bottom:6px;z-index:5;left:6px;right:6px;background:#dededa;color:#4c4b4b;padding:10px 0 2px;font-size:18px;text-align:center;line-height:1.2em;}
+.scroll{overflow:auto;height:180px;position:relative}
+.border-bot{border-bottom:1px solid #e5e5e5;padding:0 0 22px;margin:0 0 31px;}
+.border-bot2{border-bottom:1px solid #e5e5e5;padding-top:20px;margin-bottom:30px;}
+
+
+/********************** Content ************************/
+section#content{padding:22px 0 0px;}
+section.topBanner {
+  height: 98px;
+  
+  /* Banière par défaut */
+  background: url(/images/pagebanner/courtier_immobilier.jpg) no-repeat center 0;
+}
+section.topBanner h1 {
+  padding-top: 34px;
+  line-height: 31px;
+  text-shadow: 0 1px 0 #000;
+}
+section.fork_quisommesnous {
+  background: url(/images/pagebanner/courtier_immobilier.jpg) no-repeat center 0;
+}
+section.fork_credit {
+  background: url(/images/pagebanner/st-jean-cap-ferrat.jpg) no-repeat center 0;
+}
+section.fork_gestion {
+  background: url(/images/pagebanner/vignes.jpg) no-repeat center 0;
+}
+section.fork_financement {
+  background: url(/images/pagebanner/manhattan.jpg) no-repeat center 0;
+}
+section.fork_aboutus {
+  background: url(/images/pagebanner/courtier_immobilier.jpg) no-repeat center 0;
+}
+section.fork_frenchmortgage_services {
+  background: url(/images/pagebanner/vignes.jpg) no-repeat center 0;
+}
+section.fork_frenchmortgage_products {
+  background: url(/images/pagebanner/vignes.jpg) no-repeat center 0;
+}
+section.fork_simulation {
+  background: url(/images/pagebanner/manhattan.jpg) no-repeat center 0;
+}
+section.fork_news {
+  background: url(/images/pagebanner/manhattan.jpg) no-repeat center 0;
+}
+
+section.topBanner h1 {
+  color: #FFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+#page1 section#content{padding:53px 0 0 0;}
+
+/*  Buttons */
+.button{color:#e1e1e1;display:inline-block;background:#002C53;text-decoration:none;padding:3px 20px 4px;}
+.button:hover{background: #FFCC00;color:#232323;}
+.button1{color:#232323;display:inline-block;background:#ffcc00;text-decoration:none;padding:3px 20px 4px;}
+.button1:hover{background:#232323;color:#fff;}
+.link{text-decoration:none;color:#232323;}
+.link:hover{text-decoration:underline;}
+.link-1{color:#a1a1a1;font-weight:bold;}
+.link-2{color:#424141;font-weight:bold;}
+
+.list-1{padding:14px 0;margin:0 0 40px; border-top: 1px solid #dededa; background: #dededa;}
+.list-1 li{font-size:16px;margin:0;line-height:1.2em;}
+.list-1 li a{
+  color:#4C4B4B;
+  background: #FFF;
+  text-decoration:none;
+  padding:9px 15px;
+  border-bottom: 1px solid #dededa;
+  display:block; 
+  font-size: 12px; 
+  font-weight: bold;
+}
+.list-1 li a:hover{color:#232323;background:#ffcc00;}
+
+.list-2 li{border-top:1px solid #c6c6c6;padding:7px 0 8px;}
+.list-2 li:first-child{border:none;}
+.list-2 li a{color:#232323;text-decoration:none}
+.list-2 li a:hover{color:#999;}
+
+.address{margin:0 0 20px; line-height: 26px;}
+.address dd span{width:70px;display:inline-block;}
+.address dd a{text-decoration:none;color:#232323}
+.address dd a:hover{text-decoration:underline;}
+
+time{display:block;font-weight:bold;font-size:13px;}
+
+.dropcap{float:left;font-size:60px;line-height:1.2em;width:76px;text-align:center;margin:0 15px 0 0;padding:1px 0 3px;background:#ffcc00;border-radius:38px;color:#fff;font-weight:bold;text-transform:uppercase;}
+.arrow{background:url(../images/arrow.png) 0 0 no-repeat;width:41px;height:100px;margin:53px 0 0 9px;}
+.text1{color:#4d4b4b;font-size:16px;line-height:30px;letter-spacing:-1px;word-spacing:3px;margin-left:-8px;margin-top:44px;}
+
+#map_canvas{width:448px;height:272px;border:6px solid #dededa;margin-right:15px;float:left;}
+
+aside{padding:60px 0 15px;}
+aside li{margin:0 0 6px;}
+aside li a{color:#4d4b4b;text-decoration:none;}
+aside li a:hover{text-decoration:underline;}
+aside h6{font-size:14px;color:#4c4b4b;margin:0 0 15px;}
+
+aside .icons{padding:4px 0 0;}
+aside .icons a{position:relative;display:inline-block;margin:0 6px 0 0;}
+aside .icons a img{position:relative;}
+aside .icons>a>img+img{position:absolute;top:0;left:0;opacity:0;}
+aside .icons>a:hover>img+img{opacity:1;}
+/******************** Footer ******************/
+footer{padding:30px 0px;font-style:italic;color:#232323;width:950px;margin:0 auto;font-size:12px;}
+footer span{display:block;background:#e9e9e7;padding:2px 10px; text-align:right;}
+footer a{color:#232323;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+
+/* Left & Right alignment */
+blockquote{display:block;margin:0 0px 0px 0px;quotes:none;font-size:15px;font-style:italic;text-align:left;line-height:30px;color:#606060;letter-spacing:-1px;word-spacing:4px;}
+.quotes{background:#dededa;padding:15px 16px 25px 18px;margin:0 0 25px 0;position:relative;box-shadow:1px 1px 3px rgba(0,0,0,.5);margin:0 0 30px;}
+.blockquote{position:absolute;width:25px;height:13px;background:url(../images/blockquote.png) 0 0 no-repeat;bottom:-13px;left:32px;}
+
+.top1{background:url(../images/top.gif) 0 60% no-repeat;padding:0 0 0px 12px;display:inline-block;text-decoration:none;color:#4c4b4b;font-family:Tahoma, Geneva, sans-serif;}
+.top1:hover{color:#6a6862;}
+/* Content
+---------------------------------------- */		
+/* Lightbox image */
+
+.lightbox-image{display:inline-block;position:relative;}
+a.border{padding:6px;background:#dededa;display:inline-block;}
+a.border:hover{background:#FFCC00;}
+.lightbox-image img{position:relative;z-index:2;}
+.lightbox-image span{position:absolute;width:100%;height:100%;left:0;top:0;background:url(../images/magnify.png) 50% 50% no-repeat;}
+
+
+/* New pages */
+.faqResume h3{margin: 25px 0 10px 0;}
+.tauxArea, 
+.calculatorIFrame {margin: 40px 0;}
+.tauxArea ul {background: #F3F3F1; border: 1px solid #C6C6C6;}
+.tauxArea ul li {padding-left: 4px; padding-right: 4px; font-size: 14px;}
+.tauxArea img {vertical-align: middle; height: 16px; margin: 0 5px;}
+.tauxArea .meilleurTaux {float:right; font-weight: bold; font-size:16px;}
+.calculatorIFrame {float: right; width: 600px; }
+
+.homeContactBtn {
+  box-shadow: 0 2px 2px #222222;
+  line-height: 22px;
+  background: none repeat scroll 0 0 #E68E33;
+  border: 1px solid #BC7618;
+  border-radius: 4px;
+  color: #FFF;
+  font-size: 22px;
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+  width: 270px;
+}
+
+.orangeButton {
+	border: 0px;
+	cursor: pointer;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 20px;
+	color: white;
+	font-weight: normal;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.23); /* drop shadow */
+	font-size: 16px;
+	text-align: center;
+	 background: #eb5405 url('../images/bg_bigButton.png') repeat-x top left;
+-moz-border-radius: 3px; /* from vector shape */
+-webkit-border-radius: 3px; /* from vector shape */
+border-radius: 3px; /* from vector shape */
+	-moz-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #933501 /* outer stroke */;
+	-webkit-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #933501 /* outer stroke */;
+	box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #933501 /* outer stroke */;
+}
+.orangeButton span {
+	background: none;
+	padding-bottom: 7px;
+}
+.orangeButton:hover {
+	color: white;
+  background-position: bottom left;
+}
+
+#slider .main #homeContactBtn {
+  position: absolute;
+  right: 50px;
+  top: -25px;
+  z-index: 1000;
+  height: 42px;
+  line-height: 46px;
+  font-size: 22px;
+  padding: 0 35px;
+}
+
+#leftContactBtn {
+  margin: 40px auto;
+  width: 180px;
+  font-size: 20px;
+  padding: 0 35px;
+  height: 42px;
+  line-height: 46px;
+  background: #002C53;
+  
+  border-radius: 3px; /* from vector shape */
+	-moz-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #002C53 /* outer stroke */;
+	-webkit-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #002C53 /* outer stroke */;
+	box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #002C53 /* outer stroke */;
+}
+
+#leftContactBtn:hover {
+  background: #8A211A;
+  
+  border-radius: 3px; /* from vector shape */
+	-moz-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #8A211A /* outer stroke */;
+	-webkit-box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #8A211A /* outer stroke */;
+	box-shadow:
+		0 3px 0 rgba(0,0,0,.11) /* drop shadow */,
+		inset 0 1px 0 rgba(255,255,255,.23) /* inner shadow */,
+		inset 0 0 0 1px rgba(255,255,255,.13) /* inner glow */,
+		0 0 0 1px #8A211A /* outer stroke */;
+}
+
+
+ul.disc {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin: 15px 0;
+}
+ul.disc li {
+  margin: 10px 0;
+}
+
+#page1 .grid_6 h2 {
+  margin-top: 8px;
+}
+
+#languageSwitcher {
+  float:right;
+  padding: 11px 0 0 20px;
+}
+
+.logosArea .logoBox {
+    border: 1px dotted #9D8E78;
+    float: left;
+    margin-right: 17px;
+    margin-top: 17px;
+    min-height: 75px;
+    padding: 15px;
+    vertical-align: middle;
+    width: 105px;
+}
+.logosArea .logoBox img {
+    vertical-align: middle;
+}
+.teamPhoto {
+  float: left;
+  margin: 0 20px 10px 0;
+  max-width: 180px;
+  max-height: 180px;
+}
+.alignLeft {
+  text-align: left;
+}

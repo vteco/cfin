@@ -1,0 +1,22 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Faq
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          faq
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        hide: [image_name, content, version, meta_title, meta_desc, meta_keywrds, id, updated_at]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

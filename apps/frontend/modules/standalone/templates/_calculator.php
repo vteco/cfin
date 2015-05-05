@@ -1,0 +1,1 @@
+<iframe id="calculetteIframe" src="/cfi_old/calculette_<?php echo $sf_user->getCulture() ?>.php" width="620" frameborder="0" height="205"></iframe>

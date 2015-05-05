@@ -1,0 +1,67 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+homepage:
+  url:   /
+  param: { module: standalone, action: home}
+
+language:
+  url: /langue/:culture
+  param: {module: redirection, action: language}
+  
+contact:
+  class: gbI18nRoute
+  url:
+    fr: /nous-contacter
+    en: /contact-us
+  param: {module: contact, action: index}
+  
+news-list:
+  class: gbI18nRoute
+  url: 
+    fr: /actualites
+    en: /news
+  param: {module: news, action: index}
+
+news-show:
+  class: gbI18nRoute
+  url: 
+    fr: /actualites/:category_slug/:slug
+    en: /news/:category_slug/:slug
+  param: {module: news, action: show}
+
+category-show:
+  class: gbI18nRoute
+  url: 
+    fr: /actualites/:slug
+    en: /news/:slug
+  param: {module: news, action: showCategory}
+    
+faq-list:
+  url: /faq
+  param: {module: faq, action: index}
+  
+faq-show:
+  url: /faq/:slug
+  class: sfDoctrineRoute
+  options: {model: Faq, type: object}
+  param: {module: faq, action: show}
+  
+parse-standalone:
+  url: /:slug
+  class: sfDoctrineRoute
+  options: {model: StandAlone, type: object, method: findOneBySlug}
+  param: {module: standalone, action: show}
+  requirements:
+    sf_method: [get,post]
+    slug: (\w|\d|-|/)+
+  
+generate-standalone:
+  url: /:href
+  class: sfDoctrineRoute
+  options: {model: StandAlone, type: object}
+  param: {module: standalone, action: show}
+  requirements:
+    sf_method: [get,post]
+    href: (\w|\d|-|/)+
+  

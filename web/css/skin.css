@@ -1,0 +1,17 @@
+.car_wrap{margin:0 auto;width:950px;overflow:hidden;height:115px;position:relative;}
+.carousel{width:872px;background:#f3f3f1;padding:28px 33px 28px;}
+.carousel ul{overflow: hidden}
+.carousel ul li{float:left;width:183px;}
+.carousel li a{display:inline-block;}
+.carousel li a img{opacity:.2}
+.carousel li a:hover img{opacity:.6;}
+
+.car_buttons a{position:absolute;top:50%;margin-top:-33px;width:25px;height:51px;cursor:pointer;background-repeat:no-repeat;z-index:100;background-position:0 0;}
+.car_buttons a.next{right:0;background-image:url(../images/next.jpg);}
+.car_buttons a.prev{left:0;background-image:url(../images/prev.jpg);}
+.car_buttons a:hover{background-position:-25px 0;}
+
+.car_wrap2{margin:0 auto;background:#f3f3f1;width:950px;overflow:hidden;height:227px;position:relative;}
+.carousel2{width:870px !important;padding:19px 0px 25px;margin-left:39px;overflow:hidden;}
+.carousel2 ul{}
+.carousel2 ul li{float:left;margin-right:30px;width:150px;}

@@ -1,0 +1,50 @@
+#imgNews, #miniThumbnail{
+  float:left;
+  margin: 0 10px 10px 0;
+  border-radius: 5px;
+}
+#imgNews {
+  max-width: 220px;
+  max-height: 260px;
+}
+
+#thumbnail{
+  width : 100%;
+  margin-bottom : 6px;
+}
+#miniThumbnail{
+  width : 35%;
+}
+
+#secondaryNews #secondNews, #secondaryNews #thirdNews {
+  display : block;
+  width : 48%;
+}
+
+#secondaryNews #secondNews {
+  float : left;
+}
+
+#secondaryNews #thirdNews {
+  float : right;
+}
+
+#oldNews{
+  float: left;
+  width : 48%;
+  display : inline;
+  padding : 1%;
+}
+
+#oldNews h3{
+  text-align: left;
+}
+
+.mainNews {font-size:28px; }
+
+.newsDate {
+  font-size: 11px;
+  float: right;
+  margin-top: 5px;
+  font-style: italic;
+}

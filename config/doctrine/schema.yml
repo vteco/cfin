@@ -1,0 +1,140 @@
+connection: doctrine
+options:
+  type: INNODB
+  collate: utf8_general_ci
+  charset: utf8
+
+Category:
+  actAs: 
+    Timestampable: ~
+    Sluggable:
+      unique: true
+      uniqueBy: [lang]
+      fields: [title]
+      canUpdate: true
+  columns:
+    name:
+      type: string(255)
+      notnull: true
+    lang:
+      type: string(255)
+      notnull: true
+      default: fr
+    meta_title:
+      type: string(255)
+    meta_desc:
+      type: string(255)
+    meta_keywrds:
+      type: string(255)
+
+News:
+  actAs: {Timestampable: ~, Versionable: ~, Sluggable: {fields:[title]} }
+  columns:
+    category_id: 
+      type: integer
+      notnull: false
+    lang:
+      type: string(255)
+      notnull: true
+      default: fr
+    title:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(65535)
+    summary:
+      type: string(65535)
+    meta_title:
+      type: string(255)
+    meta_desc:
+      type: string(255)
+    meta_keywrds:
+      type: string(255)
+    published:
+      type: boolean
+      default: 0
+    image:
+      type: string(255)
+      notnull: false
+    flag:
+      type: boolean
+      default: 0
+  relations:
+    Category:    { onDelete: NULL, local: category_id, foreign: id, foreignAlias: News }  
+    
+Faq:
+  actAs: 
+    Timestampable: ~
+    Versionable: ~
+    Sluggable: 
+      unique: true
+      uniqueBy: [lang]
+      fields: [title]
+      canUpdate: true
+  columns:
+    title:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(65535)
+    lang:
+      type: string(255)
+      notnull: true
+      default: fr
+    meta_title:
+      type: string(255)
+    meta_desc:
+      type: string(255)
+    meta_keywrds:
+      type: string(255)
+    published:
+      type: boolean
+      default: 0
+      
+StandAlone:
+  columns:
+    page_id:
+      type: string(255)
+      unique: true
+      notnull: true
+    fork:
+      type: boolean
+      default: 0
+    title: 
+      type: string(255)
+      notnull: true
+    h1:
+      type: string(255)
+    slug:
+      type: string(255)
+      unique: true
+    is_home:
+      type: boolean
+      default: 0
+    meta_title:
+      type: string(255)
+    meta_desc:
+      type: string(255)
+    meta_keywrds:
+      type: string(255)
+    content:
+      type: string(65535)
+    menu_order:
+      type: integer
+      default: 1
+    is_main_section:
+      type: boolean
+      default: 0
+    parent_id:
+      type: integer
+  relations:
+    Parent:
+      class: StandAlone
+      local: parent_id
+      onDelete: SET NULL
+    Children:
+      class: StandAlone
+      type: many
+      local: id
+      foreign: parent_id
+      orderBy: menu_order asc

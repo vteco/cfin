@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/07-Databases
+
+dev:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      encoding: utf8
+      dsn:      mysql:host=meilleurclic.fr;dbname=cartefin_dev
+      username: devuser
+      password: devpwdcf
+
+prod:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      encoding: utf8
+      dsn:      mysql:host=www.cartefinancement.com;dbname=cartefin_prod
+      username: cartefin_user
+      password: unknown

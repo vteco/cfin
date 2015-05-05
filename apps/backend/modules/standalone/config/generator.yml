@@ -1,0 +1,22 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           standalone
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          standalone
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        hide: [meta_title, meta_desc, meta_keywrds, content, h1, parent_id]
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

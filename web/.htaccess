@@ -1,0 +1,45 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # uncomment the following line, if you are having trouble
+  # getting no_script_name to work
+  #RewriteBase /
+
+  # we skip all files with .something
+  #RewriteCond %{REQUEST_URI} \..+$
+  #RewriteCond %{REQUEST_URI} !\.html$
+  #RewriteRule .* - [L]
+
+  # we check if the .html version is here (caching)
+  RewriteRule ^$ index.html [QSA]
+  RewriteRule ^([^.]+)$ $1.html [QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  # no, so we redirect to our front web controller
+  RewriteRule ^(.*)$ index.php [QSA,L]
+
+
+  # spécifique à cartefinancement
+  Redirect 301 /Acquerir-un-bien-immobilier.php http://www.cartefinancement.com/qui-sommes-nous
+  Redirect 301 /Calculez-votre-pret-immobiler.php http://www.cartefinancement.com/simulation
+  Redirect 301 /Contact.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /contact2.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /contact2_submit.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /contact_submit.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /contact_submit2.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /dsperror.php http://www.cartefinancement.com
+  Redirect 301 /FAQ.php http://www.cartefinancement.com/faq/acheter-avec-ou-sans-credit-immobilier
+  Redirect 301 /Financement-de-societes.php http://www.cartefinancement.com/financement-entreprise
+  Redirect 301 /Financer-un-projet-en-utilisant-votre-patrimoine.php http://www.cartefinancement.com/gestion-patrimoine
+  Redirect 301 /Glossaire.php http://www.cartefinancement.com/lexique
+  Redirect 301 /newsletter_submit.php http://www.cartefinancement.com
+  Redirect 301 /newsletter_submit2.php http://www.cartefinancement.com
+  Redirect 301 /Partenaire.php http://www.cartefinancement.com/partenaires
+  Redirect 301 /Qui-sommes-nous.php http://www.cartefinancement.com/qui-sommes-nous
+  Redirect 301 /Renegocier-un-pret.php http://www.cartefinancement.com/credit-immobilier/usage
+  Redirect 301 /thankyou_contact.php http://www.cartefinancement.com/nous-contacter
+  Redirect 301 /thankyou_newsletter.php http://www.cartefinancement.com
+
+</IfModule>

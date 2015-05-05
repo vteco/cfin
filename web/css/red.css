@@ -1,0 +1,10 @@
+.button:hover{background: #8A211A !important;  color:#FFF !important;}
+a.border:hover{background:#8A211A !important;  color:#FFF !important;}
+h1 strong{color:#8A211A !important;}
+.button1{background:#8A211A !important;  color:#FFF !important;}
+.list-1 li a:hover, .list-1 li a.current {background:#8A211A !important;  color:#FFF !important;}
+.dropcap{background:#8A211A  !important;  color:#FFF !important;}
+.sf-menu span{background:#8A211A !important; color:#FFF !important;}
+.sf-menu li.current, .sf-menu li:hover{background:#8A211A !important;}
+.sf-menu li.current a, .sf-menu li:hover a{ color:#FFF !important;}
+.sf-menu a.contactLink {color: #D53E00 !important;}

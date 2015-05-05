@@ -1,0 +1,24 @@
+#slider{border-top:1px solid #e3e3e3;background:url(../images/slider-bg2.png) 50% 0 no-repeat #f0f0ed;}
+.slider_1{background:url(../images/slider-bg.png) 0 100% repeat-x;position:relative;}
+
+#slider .slider {width:950px;height:330px;margin:0 auto;position:relative;}
+#slider .items {display:none}
+#slider .slider .pic{position:absolute;right:0;}
+
+#slider .pagination {width:120px;left:50%;position:absolute;margin-left:-34px;top:18px;}
+#slider .pagination li {float:left;}
+#slider .pagination li.current {}
+
+#slider .pagination  a {display:inline-block;background:url(../images/cs-button.png) 0 0 no-repeat;width:15px;height:15px;margin:0 1px;}
+#slider .pagination li.current a, #slider .pagination a:hover {background:url(../images/cs-button-active.png) 0 0 no-repeat;}
+#slider .pagination  a.cs-active{cursor:default;}
+
+.slider .banner{position:absolute;left: 64px;top:125px;width:350px;padding: 0px 0 0 0;height:100px;overflow:hidden;}
+.slider .banner strong{font-size:26px;line-height:1.2em;padding:9px 15px 7px;letter-spacing:-1px;word-spacing:3px;overflow:hidden; display: inline-block; }
+.slider .banner strong:first-child{color:#ededed;background:#002C53;}
+.slider .banner strong:last-child{color:#ededed;background:#8A211A;font-size:25px;padding:6px 15px 7px;}
+
+/* on écrase des éléments du slider initial afin de pouvoir obtenir un slider pleine largeur */
+#slider .slider {width:100%;}
+.slider .pic {width: 100% !important; background-position: center 0 !important;}
+.slider .bannerContainer {margin: 0 auto; width: 950px; position:relative;}

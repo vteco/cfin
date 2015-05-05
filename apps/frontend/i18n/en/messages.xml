@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="en" datatype="plaintext" original="messages" date="2013-10-08T23:22:39Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Toutes les FAQ</source>
+        <target>See all FAQ</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Nous contacter</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>FAQ_left</source>
+        <target>All the answers to the frequently asked questions about French Mortgage.</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>FAQ</source>
+        <target>Frequently Asked Questions</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>SendUsMsg</source>
+        <target>Send us a message</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>SendError</source>
+        <target>An error has occured. Please try again later.</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>RequiredField</source>
+        <target>This field is required.</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>InvalidName</source>
+        <target>This name is invalid.</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>InvalidEmail</source>
+        <target>This email address is invalid</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>InvalidTel</source>
+        <target>This telephone number is invalid.</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>InvalidComment</source>
+        <target>The message must be at least 20 characters.</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>SuccessMsg1</source>
+        <target>Your message has been sent!</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>SuccessMsg2</source>
+        <target>We will get back to you soon.</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>ContactReset</source>
+        <target>clear</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>ContactSend</source>
+        <target>send</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>CarteFin</source>
+        <target>French Mortage Expert</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>LabelName</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>LabelEmail</source>
+        <target>Email address</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>LabelTel</source>
+        <target>Telephone</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>LabelComment</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Slider1.1</source>
+        <target>Residential</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Slider1.2</source>
+        <target>Mortgage</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Slider2.1</source>
+        <target>Buy To Let</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Slider2.2</source>
+        <target>Leaseback</target>
+      </trans-unit>
+        <trans-unit id="25">
+        <source>Slider3.1</source>
+        <target>Equity release</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Slider3.2</source>
+        <target>Solutions</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Slider4.1</source>
+        <target>Refinancing</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Slider4.2</source>
+        <target>Your mortgage</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>OurPartners</source>
+        <target>Our partners</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>AllNews</source>
+        <target>All our news</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>NoNewsForNow</source>
+        <target>There are no news for the moment</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

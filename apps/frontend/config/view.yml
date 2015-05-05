@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [<?php echo implode(", ", 
+    array_map(function($s) { return $s."?v=3";}, 
+    array(
+      'main.css',
+      'style.css',
+      'red.css',
+    ))) ?>]
+
+  javascripts:    [jquery-1.7.1.min.js, cufon-yui.js, bebas-neue.cufonfonts.js, cufon-replace.js, script.js]
+
+  has_layout:     true
+  layout:         layout

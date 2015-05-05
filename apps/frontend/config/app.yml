@@ -1,0 +1,44 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+dev:
+  site_base_url: cartefin-dev.fr
+
+  contact_email_fr: pierre.bokobza+fr@gmail.com
+  contact_email_en: pierre.bokobza+en@gmail.com
+  
+  fr_home: http://www.cartefin-dev.fr/frontend_dev.php
+  en_home: http://frenchmortgage.cartefin-dev.fr/frontend_dev.php
+
+prod:
+  site_base_url: www.cartefinancement.com
+  
+  contact_email_fr: contact@cartefinancement.com
+  contact_email_en: contact@french-mortgage-expert.com
+  
+  fr_home: http://www.cartefinancement.com
+  en_home: http://www.french-mortgage-expert.com
+  
+all:
+  # Website version, to update whenever we go to production. It prevents caching on css and js files when they change
+  website_version: 0
+
+  contact_name: Carte Financement
+  
+  # Métas statiques
+  news_home_title_fr: Toute l'actualité du crédit immobilier
+  news_home_desc_fr: Toute l'actualité crédit immobilier est disponible sur le site cartefinancement.com
+  news_home_keywrds_fr: crédit, immobilier, crédit immo
+  news_home_title_en: All our real estate news - French-Mortgage-Expert.com
+  news_home_desc_en: The french mortgage news are available on French-Mortgage-Expert.com
+  news_home_keywrds_en: real estate, french mortgage
+  
+  faqs_home_title_fr: Foire Aux Questions - FAQ
+  faqs_home_desc_fr: Toutes les réponses à vos questions sur le crédit immobilier
+  faqs_home_keywrds_fr: faq crédit, questions immobilier, crédit immo, faq
+  faqs_home_title_en: Frequently asked questions - FAQ
+  faqs_home_desc_en: The answers to all your questions about french mortgage
+  faqs_home_keywrds_en: faq crédit, questions immobilier, crédit immo, faq
+  
+  .settings:
+    culture_supported_list: [fr, en]
